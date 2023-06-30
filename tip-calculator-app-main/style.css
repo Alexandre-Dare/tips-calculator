@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    color: hsl(186, 14%, 43%);
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    text-align: center;
+}
+
+#title {
+    margin-top: 8rem;
+}
+#app {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: center;
+    width: 40rem;
+    height: 21rem;
+    margin: 3rem auto 10rem auto;
+    border-radius: 1rem;
+}
+
+
+
+#bill {
+    margin: 2rem 0 0 -15rem;
+}
+#bill p {
+    margin-left: -12.5rem;
+}
+#dollar {
+    position: relative;
+    left: 1.5rem;
+    top: rem;
+}
+#bill-input {
+    height: 1.8rem;
+    width: 16rem;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: .1rem;
+    text-align: end;
+}
+#bill-input[type=number] {
+    padding-right: .8rem;
+}
+
+
+#tip-selector {
+    width: 15rem;
+    margin: 2rem 0 0 -14rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#tip-selector div {
+    margin-left: -.1rem;
+}
+.percent-selector {
+    width: 4.5rem;
+    margin-top: .5rem;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius:.2rem;
+    border: none;
+}
+
+#custom {
+    width: 4.5rem;
+    margin-top: .5rem;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+    border-radius:.2rem;
+    border: none;
+    text-align: center;
+}
+
+
+
+#num-of-people {
+    margin: 2rem 0 0 -20rem;
+}
+#people-counter {
+    width: 16rem;
+    height: 1.8rem;
+    margin-left: 5rem;
+    border: none;
+    border-radius: .1rem;
+    text-align: end;
+    background-color: hsl(189, 41%, 97%);
+}
+#people-counter[type=number]{
+    padding-right: .8rem;
+}
+#person-icon {
+    position: relative;
+    left: 6.5rem;
+}
+
+
+/*----------------------------------result part --------------*/
+
+#result {
+    background-color: hsl(183, 100%, 15%);
+    width: 20rem;
+    height: 18rem;
+    margin: 1.5rem -14rem 0 2rem;
+    border-radius: 1rem;
+}
+#tip-amount {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0 1.5rem;
+}
+#tip-amount h2 {
+    color: white;
+}
+#person-paragraph {
+    margin-left: -1rem;
+} 
+#amount-per-person {
+    color: hsl(172, 67%, 45%);
+    font-size: 45px;
+    position: relative;
+    bottom: .5rem;
+    justify-content:;
+    margin-right: .5rem;
+    padding-right: 1rem;
+}
+
+#total {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0 1.5rem;
+}
+#total h2 {
+    color: white;
+    margin-left: -2rem;
+}
+#Total-per-person {
+    color: hsl(172, 67%, 45%);
+    font-size: 45px;
+    position: relative;
+    bottom: .5rem;
+    justify-content:;
+    margin-right: .5rem;
+    padding-right: 1rem;
+}
+
+#reset {
+    background-color: hsl(172, 67%, 45%);
+    position: relative;
+    top: 5rem;
+    border: none;
+    border-radius: .2rem;
+    width: 80%;
+}
+#reset:disabled {
+    opacity: .2;
+}
+
+/*------------------------------------hover---------------------*/
+@media (max-width: 990px) {
+    * {
+        margin-left: 0;
+        padding: 0 0 0 0;
+    }
+    #title {
+        margin: 2rem auto 0 auto;
+    }
+    #app {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 40rem;
+        margin: 1rem auto 0 auto;
+    }
+
+    #input-side {
+        margin: 0 auto 0 auto;
+        width:20rem;
+    }
+    #bill {
+        margin: 1rem 0 0 -1rem;
+    }
+    #tip-selector {
+        margin-left: 2rem;
+    }
+    .percent-selector {
+        width: 7rem;
+    }
+    #num-of-people {
+        margin-left: -5rem;
+    }
+    #result {
+        margin: 1rem auto 0 auto;
+        width: 90%;
+        height: 15rem;
+    }
+    #amount-per-person {
+        margin-left: -1rem;
+    }
+    #Total-per-person {
+        margin-left: -1rem;
+    }
+    #reset {
+        top: 1rem;
+        height: 3rem;
+    }
+}

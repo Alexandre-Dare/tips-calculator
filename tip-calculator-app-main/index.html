@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+    <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+    <img src="images/logo.svg" alt="logo" id="title">
+    <main id="app">
+        <div id="input-side">
+            <div id="bill">
+                <p>Bill</p>
+                <img src="images/icon-dollar.svg" alt="dollar" id="dollar">
+                <input type="number" name="bill" id="bill-input" value='' placeholder="0">
+            </div>
+            <div id="tip-selector">
+                <p>Select tip %</p>
+                <div>
+                    <input type="button" class="percent-selector" value="5%" id="five-percent">
+                    <input type="button" class="percent-selector" value="10%" id="ten-percent">
+                    <input type="button" class="percent-selector" value="15%" id="fifteen-percent">
+                    <input type="button" class="percent-selector" value="25%" id="twenty-five-percent">
+                    <input type="button" class="percent-selector" value="50%" id="fifty-percent">
+                    <input type="number" value="" placeholder="custom" id="custom">
+                </div>
+            </div>
+            <div id="num-of-people">
+                <p>Number of People</p>
+                <img src="images/icon-person.svg" alt="person" id="person-icon">
+                <input type="number" name='people-counter' value="" placeholder="0" id="people-counter">
+            </div>
+        </div>
+
+
+
+
+        <div id="result">
+            <div id="tip-amount">
+                <div>
+                    <h2>Tip Amount</h2>
+                    <p id="person-paragraph">/ person </p>
+                </div>
+                <p id="amount-per-person">$0.00</p>
+            </div>
+            <div id="total">
+                <div>
+                    <h2>Total</h2>
+                    <p>/ person </p>
+                </div>
+                <p id="Total-per-person">$0.00</p>
+            </div>
+            <input type="button" value="RESET" id="reset">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
